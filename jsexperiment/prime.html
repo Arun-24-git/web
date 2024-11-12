@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>prime</title>
+</head>
+<body>
+<script>
+var num=Number(prompt("enter a number:"));
+if(num < 2){
+document.write("not prime");
+}
+else
+{
+var i;
+for(i=2;i<num;i++)
+{
+if(num % i ==0)
+{
+document.write("not prime");
+break;
+}
+}
+if(i == num)
+{
+document.write("prime");
+}
+}
+</script>
+</body>
+</html>

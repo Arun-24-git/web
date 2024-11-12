@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>fibonacci</title>
+</head>
+<body>
+<script>
+var num=prompt("enter the number:");
+var n1=0,n2=1,n3;
+document.write("fibonacci series upto" + num +":<br>");
+for( var i=1;i<=num;i++)
+{
+document.write(n1 +"<br>");
+n3=n1+n2;
+n1=n2;
+n2=n3;
+}
+</script>
+</body>
+</html>
