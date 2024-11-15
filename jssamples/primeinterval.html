@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Range prime</title>
+</head>
+<body>
+<h1><u>INTERVAL PRIMENUMBER</u></h1>
+<script>
+var start=Number(prompt("enter the start range:"));
+var end=Number(prompt("enter the end range:"));
+document.write("The prime number in range:","<br>");
+for(var i=start;i<=end;i++)
+{
+let isPrime=true;
+for(var j=2;j<=i/2;j++)
+{if(i%j==0)
+{
+isPrime=false
+break;
+}
+}
+if(isPrime)
+{
+document.write(i,"<br>");
+}
+}
+</script>
+</body>
+</html>
