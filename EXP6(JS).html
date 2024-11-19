@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>functions</title>
+</head>
+<body bgcolor="aqua">
+<h1><center><u>STRING AND MATH FUNCTIONS</u></center></h1>
+<h2>String Functions</h2>
+<p>String="WELCOME TO JAVASCRIPT"</P>
+<script>
+var str="welcome to javascript";
+document.write("length of the string:"+str.length+"<br><br>");
+var replacestr=str.replace("javascript","html");
+document.write("Replace 'javascript' with 'html':"+replacestr+"<br><br>");
+document.write("uppercase of the string:"+str.toUpperCase()+"<br><br>");
+document.write("Lowercase of the string:"+str.toLowerCase()+"<br><br>");
+document.write("Index of  'to' in given string : " +str.indexOf('to')+"<br><br>");
+var substr=str.substring(0,6);
+document.write("substring from(0,6):" +substr+"<br><br>");
+</script>
+<h2>Maths Functions</h2>
+<p>NUMBER=1250.2</p>
+<script>
+var num=1250.2;
+document.write("Squareroot of " +num+ " : " +Math.sqrt(num)+"<br><br>");
+document.write("Power of " +num+ ":" +Math.pow(num,3)+"<br><br>");
+document.write("Absolute value:" +Math.abs(num)+"<br><br>");
+document.write("Rounded value:" +Math.round(num)+"<br><br>");
+document.write("ceil value:" +Math.ceil(num)+"<br><br>");
+document.write("Floor value:" +Math.floor(num)+"<br><br>");
+document.write("Max value in(2,1,5) : " +Math.max(2,1,5)+"<br><br>");
+document.write("Min value in(2,1,5) : " +Math.min(2,1,5)+"<br><br>");
+document.write("value of pi : " +Math.PI+"<br");
+
+</script>
+</body>
+</html>
