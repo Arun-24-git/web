@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>color</title>
+</head>
+<style>
+h1{
+  color:black;
+  font-weight:bold;
+  font-size:20pt;
+  font-family:serif;
+  text-align:center;
+  }
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    }
+</style>
+<body bgcolor="pink">
+<h1>BACKGROUND COLOR</h1>
+<center><button type="button" onclick="colorchange();">change background color</button></center>
+<script>
+var color=["purple","yellow","aqua","green"];
+var l=color.length;
+var i=0;
+function colorchange()
+{
+while(i<l)
+{
+document.getElementsByTagName("body")[0].style.backgroundColor=color[i];
+i=i+1;
+return;
+}
+}
+</script>
+</body>
+</html>
