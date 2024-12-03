@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>event</title>
+<style>
+h1{
+  color:red;
+  font-weight:bold;
+  font-size:20pt;
+  font-family:serif;
+  text-align:center;
+  }
+</style>
+</head>
+<body>
+<h1>MOUSE EVENTS</h1>
+<center><img onmouseover="imagechange(this)" src="aero.jpg" width="1000" height="400">
+<p id ="text"></p></center>
+</body>
+<script>
+let img=["aero.jpg","landscape.jpg","nature.png"];
+let i=0;
+function imagechange(imageElement)
+{
+imageElement.src=img[i];
+document.getElementById('text').innerHTML=img[i];
+i=(i+1)%img.length;
+}
+</script>
+</html>
