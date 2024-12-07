@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>exam</title>
+<style>
+ form {
+            background:pink;
+            margin: 30px auto;
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+  h1 {
+            color: #333;
+            text-align: center;
+            padding: 2px ;
+
+            color: black;
+            margin: 0;
+        }
+ body {
+            font-family: Arial, sans-serif;
+            background-color:#FFFFE0;
+            margin: 0;
+            padding: 0;
+           
+        }
+ </style>
+</head>
+<body>
+<h1>ONLINE QUIZ</h1>
+ <form name="examForm" onsubmit="return exam()" method="get">
+<label>Enter your name:</label>         <input type="text" id="fname"><br><br>
+<label>Enter Roll number:</label><input type="number" id="reg" value="number"><br><br>
+<p> 1). Which element is used for making any text bold?<br>
+<input type="radio" name="one" value="p tag">p tag<br>
+<input type="radio" name="one" value="b tag">b tag<br>
+</p>
+<p> 2). How many heading tags are there in HTML? <br>
+<input type="radio" name="two" value="5">5<br>
+<input type="radio" name="two" value="6">6<br>
+</p>
+<p> 3). Which of the following is used to create webpage?<br>
+<input type="radio" name="three" value="c"> c<br>
+<input type="radio" name="three" value="HTML">HTML<br>
+</p>
+<p>
+4).What is JavaScript?<br>
+<input type="radio" name="four" value="a programming language">a programming language<br>
+<input type="radio" name="four" value=" A type of database">a type of database<br>
+</p>
+<p>
+5).Which company developed JavaScript?<br>
+<input type="radio" name="five" value="Microsoft">Microsoft<br>
+<input type="radio" name="five" value="Netscape"> Netscape<br>
+</p>
+<p>
+6).Which symbol is used for single-line comments in JavaScript?<br>
+<input type="radio"name="six" value=" #">#<br>
+<input type="radio" name="six" value="//">//<br>
+</p>
+<p>7).What does CSS stand for?<br>
+<input type="radio" name="seven" value="computer style sheets">Computer Style Sheets<br>
+<input type="radio" name="seven" value="Cascading Style Sheets">Cascading Style Sheets<br>
+</p>
+<p>8).Which property is used to change the text color in CSS?<br>
+<input type="radio" name="eight" value="font-color">font color<br>
+<input type="radio" name="eight" value="color"> color<br>
+</p>
+<p>9).Which of the following is the correct syntax to apply a background color in CSS?<br>
+<input type="radio" name="nine" value="background-color: red;">background-color: red;<br>
+<input type="radio" name="nine" value="color-background: red;">color-background: red;<br>
+</p>
+<P>10).What is the correct CSS syntax for making all the paragraph elements bold?<br>
+<input type="radio" name="ten" value="p {text-weight: bold;}">p {text-weight: bold;}<br>
+<input type="radio" name="ten" value="p {font-weight: bold;}">p {font-weight: bold;}<br>
+</p>
+<p>
+    <center>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+    </center>
+    </p>
+</form>
+</body>
+<script>
+function exam()
+    {
+    var m=0;
+    if(document.examForm.one.value=="b tag")
+    m=m+1;
+    if(document.examForm.two.value=="6")
+    m=m+1;
+    if(document.examForm.three.value=="HTML")
+    m=m+1;
+    if(document.examForm.four.value=="a programming language")
+    m=m+1;
+    if(document.examForm.five.value=="Netscape")
+    m=m+1;
+    if(document.examForm.six.value=="//")
+    m=m+1;
+    if(document.examForm.seven.value=="Cascading Style Sheets")
+    m=m+1;
+    if(document.examForm.eight.value=="color")
+    m=m+1;
+    if(document.examForm.nine.value=="background-color: red;")
+    m=m+1;
+    if(document.examForm.ten.value=="p {font-weight: bold;}")
+    m=m+1;
+    alert("Thankyou  for taking the online exam \n Your score is:"+m+" out of 10");
+    }
+</script>
+</html>
+
